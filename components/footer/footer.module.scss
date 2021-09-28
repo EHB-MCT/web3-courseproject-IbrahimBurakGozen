@@ -1,0 +1,12 @@
+@import '../../styles/sass/colors.module.scss', '../../styles/sass/main.module.scss';
+
+.footer {
+    background-color: $primary-color;
+    padding: 5vh $padding-main-content-mobile;
+}
+
+@media (min-width:$desktop-width) {
+    .footer {
+        padding: 10vh $padding-main-content-desktop;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/sass/grid.module.scss', '../../styles/sass/main.module.scss';
+
+.container {
+    @include gridColumn(center, center);
+    gap: 4rem;
+}
+
+@media (min-width: $desktop-width) {
+    .container {
+        grid-template-columns: repeat(3, 33%);
+        width: 100%;
+    }
+}

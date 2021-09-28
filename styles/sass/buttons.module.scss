@@ -1,0 +1,64 @@
+@import 'font.module.scss', 'colors.module.scss';
+
+.simple-button {
+  border: none;
+  background-color: #ffffff00;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin simpleButton($color) {
+  border: none;
+  background-color: $color;
+  padding: 1rem 6rem;
+  text-align: center;
+  border-radius: 100px;
+  font-size: 2rem;
+  color: $white;
+  @include MediumType();
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin primaryButton() {
+  @include simpleButton($primary-color);
+  box-shadow: $shadow-color-primary;
+
+  &:hover {
+    background-color: $primary-color-soft;
+  }
+}
+
+@mixin blueButton() {
+  @include simpleButton($blue);
+  box-shadow: $box-shadow-blue;
+
+  &:hover {
+    background-color: $soft-blue;
+  }
+}
+
+@mixin redButton() {
+  @include simpleButton($red);
+  box-shadow: $box-shadow-red;
+
+  &:hover {
+    background-color: $soft-red;
+  }
+}
+
+@mixin yellowButton() {
+  @include simpleButton($yellow);
+  box-shadow: $box-shadow-yellow;
+
+  &:hover {
+    background-color: $soft-yellow;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../styles/sass/font.module.scss', '../styles/sass/grid.module.scss','../styles/sass/main.module.scss';
+
+.landingPage {
+    padding: 15vh 0;
+
+    .ladingPageTitle {
+        @include ExtraBoldType();
+        font-size: 6rem;
+    }
+}
+
+.projectList {
+    @include gridColumn(center,center);
+    gap: 4rem;
+}
+
+@media (min-width: $desktop-width) {
+    .projectList {
+        grid-template-columns: repeat(3,33%);
+        width:100%;
+    }
+}

@@ -1,0 +1,7 @@
+@mixin gridColumn($justify, $align) {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-items: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,38 @@
+@import 'colors.module.scss', 'main.module.scss';
+
+.simple-a {
+  outline: none;
+  color: $typo-black;
+  text-decoration: none;
+}
+
+.text-color {
+  color: $typo-black;
+}
+
+.d-none {
+  display: none;
+}
+
+.desktop {
+  display: none !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.page-title {
+  @include BigTitle();
+  color: $primary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .desktop {
+    display: block !important;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+}

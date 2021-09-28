@@ -1,0 +1,27 @@
+@import './grid.module.scss';
+
+$tablet-width: 768px;
+$desktop-width:1024px;
+$padding-main-content-mobile: 2rem;
+$padding-main-content-desktop: 8rem;
+
+
+.mainContent {
+  padding: 10vh $padding-main-content-mobile;
+  @include gridColumn(start, start);
+  gap: 15vh;
+
+  section {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .mainContent {
+    padding: 10vh $padding-main-content-desktop;
+    gap: 10rem;
+  }
+
+}
