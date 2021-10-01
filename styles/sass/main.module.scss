@@ -5,9 +5,8 @@ $desktop-width:1024px;
 $padding-main-content-mobile: 2rem;
 $padding-main-content-desktop: 8rem;
 
-
 .mainContent {
-  padding: 10vh $padding-main-content-mobile;
+  padding: 7vh $padding-main-content-mobile;
   @include gridColumn(start, start);
   gap: 15vh;
 

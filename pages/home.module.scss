@@ -1,22 +1,39 @@
-@import '../styles/sass/font.module.scss', '../styles/sass/grid.module.scss','../styles/sass/main.module.scss';
+@import '../styles/sass/text.module.scss', '../styles/sass/container.module.scss', '../styles/sass/main.module.scss', '../styles/sass/flex.module.scss';
 
-.landingPage {
-    padding: 15vh 0;
+.topBarContainer {
+    @include flexRow(space-evenly, center);
+    @include containerPrimary();
 
-    .ladingPageTitle {
-        @include ExtraBoldType();
-        font-size: 6rem;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    max-width: 90vw;
+
+    background-color: $primary-color-soft;
+    border-radius: 0 100px 100px 0;
+    padding: 2rem;
+    text-align: center;
+
+    img {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-.projectList {
-    @include gridColumn(center,center);
-    gap: 4rem;
+.topBarTitle {
+    @include normalTitle();
+    color: $typo-white;
 }
 
-@media (min-width: $desktop-width) {
-    .projectList {
-        grid-template-columns: repeat(3,33%);
-        width:100%;
-    }
-}
+// .projectList {
+//     @include gridColumn(center, center);
+//     gap: 4rem;
+// }
+
+// @media (min-width: $desktop-width) {
+//     .projectList {
+//         grid-template-columns: repeat(3, 33%);
+//         width: 100%;
+//     }
+// }

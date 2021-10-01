@@ -1,0 +1,434 @@
+@import '../../../styles/sass/flex.module.scss',
+'../../../styles/sass/main.module.scss',
+'../../../styles/sass/container.module.scss',
+'../../../styles/sass/buttons.module.scss',
+'../../../styles/sass/colors.module.scss',
+'../../../styles/sass/text.module.scss',
+'../../../styles/sass/basic.module.scss',
+'../../../styles/sass/grid.module.scss';
+
+
+.mobileContainer {
+    @include containerPrimary();
+    box-shadow: 0px -3px 10px $shadow-color-red;
+    border-radius: 0;
+    background-color: #ffffff00;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.linksContainer {
+    @include flexRow(space-between, center);
+}
+
+.link,
+.currentPage {
+    @include gridColumn(center, center);
+    gap: 0.5rem;
+    width: 35px;
+    height: 35px;
+
+    svg {
+        margin: auto;
+        height: 18px;
+        max-width: 30px;
+        fill: $typo-grey;
+        opacity: 0.3;
+    }
+
+    img {
+        @include containerPrimary();
+        padding: 0;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+}
+
+.addButton {
+    @include primaryButton();
+    @include flexColumn(center, center);
+    padding: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.currentPage {
+    opacity: 1;
+    color: $typo-black;
+
+    img {
+        border: 2px solid $primary-color;
+    }
+
+    svg {
+        opacity: 1;
+        fill: $typo-black;
+    }
+}
+
+
+
+// .navigationContainer {
+//     z-index: 300;
+//     @include containerPrimary();
+//     box-shadow: 0px -3px 10px $shadow-color-red;
+//     border-radius: 0 !important;
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+
+//     //@include flexRow(space-between);
+
+//     .navigationInnerLinks {
+//         @include flexRow(space-between, center);
+
+//         .navgiationLinkInnerContent {
+//             @include flexColumn(center, center);
+
+//             span {
+//                 display: none;
+//             }
+
+//             svg {
+//                 margin: auto;
+//                 height: 17px;
+//                 fill: $typo-grey;
+//                 opacity: 0.5;
+//             }
+//         }
+
+//         // .navigationLink {
+//         //     @include flexColumn(center, center);
+//         //     padding: 0 1rem;
+
+//         //     .accountLink {
+//         //         margin: 0;
+//         //     }
+//         // }
+
+//         .profileImg {
+//             @include containerPrimary();
+//             padding: 0;
+//             border-radius: 50px;
+//             width: 25px;
+//             height: 25px;
+//             margin: 0;
+//         }
+
+//         .mobileNavAddButton {
+//             @include primaryButton();
+//             width: 30px;
+//             height: 30px;
+//             padding: 0.5rem;
+//             text-align: center;
+//             @include flexColumn(center, center);
+
+//             svg {
+//                 fill: $white;
+//                 opacity: 1;
+//             }
+//         }
+//     }
+// }
+
+// .current-page {
+//     .navgiation-link-inner-content {
+//         span {
+//             opacity: 1 !important;
+//             color: $typo-black !important;
+//         }
+
+//         svg {
+//             opacity: 1 !important;
+//             fill: $typo-black !important;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (min-width: $desktop-width) {
+
+//     .navigationContainer {
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         right: auto;
+//         padding: 2rem 0;
+//         @include flexColumn(space-between, center);
+
+
+//         .navigationInnerLinks {
+//             @include flexColumn(center, center);
+//             gap: 3rem;
+
+//             .navgiationLinkInnerContent {
+//                 margin: 0;
+//                 text-align: center;
+//                 gap: 0.7rem;
+
+//                 span {
+//                     display: inline-block;
+//                     @include BoldType();
+//                     font-size: 0.9rem;
+//                     color: $typo-black;
+//                     opacity: 0.7;
+//                 }
+
+//                 svg {
+//                     height: 17px;
+//                     fill: $typo-black;
+//                     opacity: 1;
+//                 }
+//             }
+
+//             .navigationLink {
+//                 @include flexColumn(center, center);
+//                 padding: 1rem;
+
+//                 .accountLink {
+//                     margin: 0;
+//                 }
+//             }
+
+//             .profileImg {
+//                 width: 40px;
+//                 height: 40px;
+//             }
+
+//             :first-child {
+//                 margin-top: 1rem;
+//             }
+//         }
+
+//         &:last-child {
+//             .navgiationLinkInnerContent {
+//                 @include flexColumn(center, center);
+//                 margin: 0;
+//                 text-align: center;
+//                 gap: 0.7rem;
+
+//                 span {
+//                     display: inline-block;
+//                     @include BoldType();
+//                     font-size: 0.9rem;
+//                     color: $typo-black;
+//                     opacity: 0.7;
+//                 }
+
+//                 svg {
+//                     height: 17px;
+//                     fill: $typo-black;
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+
+//     .currentPage {
+//         background-color: $blue;
+//         color: $white;
+
+//         .navgiationLinkInnerContent {
+//             span {
+//                 color: $white !important;
+//             }
+
+//             svg {
+//                 fill: $white !important;
+//             }
+//         }
+
+//     }
+
+// }
+
+// .navigationContainer {
+//     @include containerPrimary();
+//     z-index: 300;
+//     box-shadow: 0px -3px 10px $shadow-color-primary;
+//     border-radius: 0 !important;
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     padding: 1.5rem 2rem;
+// }
+
+// .navigationInnerLinks {
+//     @include flexRow(space-between, center);
+// }
+
+// .navgiationLinkInnerContent {
+//     @include gridColumn(center, center);
+
+//     span {
+//         display: none;
+//     }
+
+//     svg {
+//         margin: auto;
+//         height: 17px;
+//         fill: $typo-grey;
+//         opacity: 0.5;
+//     }
+// }
+
+
+// .currentPage {
+//     .navgiationLinkInnerContent {
+//         span {
+//             opacity: 1 !important;
+//             color: $typo-black !important;
+//         }
+
+//         svg {
+//             opacity: 1 !important;
+//             fill: $typo-black !important;
+//         }
+//     }
+// }
+
+// .mobileNavAddButton {
+//     @include flexColumn(center, center);
+//     @include primaryButton();
+//     width: 30px;
+//     height: 30px;
+//     padding: 0.5rem;
+
+
+//     svg {
+//         fill: $white;
+//         opacity: 1;
+//     }
+// }
+
+// .profileImg {
+//     @include containerPrimary();
+//     padding: 0;
+//     border-radius: 50px;
+//     width: 25px;
+//     height: 25px;
+//     margin: 0;
+// }
+
+// .navigationLink {
+//     @include flexColumn(center, center);
+//     padding: 0 1rem;
+
+//     .accountLink {
+//         margin: 0;
+//     }
+// }
+
+
+
+// @media (min-width: $desktop-width) {
+
+//     .navigationContainer {
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         right: auto;
+//         padding: 2rem 0;
+//         @include flexColumn(space-between, center);
+
+//         :last-child {
+//             .navgiationLinkInnerContent {
+//                 margin: 0;
+//                 text-align: center;
+//                 gap: 0.7rem;
+
+//                 span {
+//                     display: inline-block;
+//                     @include BoldType();
+//                     font-size: 0.9rem;
+//                     color: $typo-black;
+//                     opacity: 0.7;
+//                 }
+
+//                 svg {
+//                     height: 17px;
+//                     fill: $typo-black;
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+
+//     .navigationInnerLinks {
+//         @include gridColumn(center, center);
+//         gap: 3rem;
+
+//         :first-child {
+//             margin-top: 1rem;
+//         }
+//     }
+
+//     .navgiationLinkInnerContent {
+//         margin: 0;
+//         text-align: center;
+//         gap: 0.7rem;
+
+//         span {
+//             display: inline-block;
+//             @include BoldType();
+//             font-size: 0.9rem;
+//             color: $typo-black;
+//             opacity: 0.7;
+//         }
+
+//         svg {
+//             height: 17px;
+//             fill: $typo-black;
+//             opacity: 1;
+//         }
+//     }
+
+
+
+//     .currentPage {
+//         background-color: $primary-color;
+//         color: $white;
+
+//         .navgiationLinkInnerContent {
+//             span {
+//                 color: $white !important;
+//                 width: 100%;
+//             }
+
+//             svg {
+//                 fill: $white !important;
+//             }
+//         }
+
+//     }
+
+//     .profileImg {
+//         width: 40px;
+//         height: 40px;
+//     }
+
+//     .navigationLink {
+//         padding: 1rem;
+//     }
+// }

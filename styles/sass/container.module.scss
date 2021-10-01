@@ -29,18 +29,3 @@ $project-container-main-padding-desktop: 1.5rem $project-container-padding-right
   @include container($container-background-color);
   box-shadow: $box-shadow-primary;
 }
-
-@mixin containerBlue() {
-  @include container($container-background-color);
-  box-shadow: $box-shadow-blue;
-}
-
-@mixin containerRed() {
-  @include container($container-background-color);
-  box-shadow: $box-shadow-red;
-}
-
-@mixin containerYellow() {
-  @include container($container-background-color);
-  box-shadow: $box-shadow-yellow;
-}

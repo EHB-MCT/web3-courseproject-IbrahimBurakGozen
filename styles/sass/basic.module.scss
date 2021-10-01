@@ -14,10 +14,6 @@
   display: none;
 }
 
-.desktop {
-  display: none !important;
-}
-
 .no-padding {
   padding: 0 !important;
 }
@@ -25,6 +21,10 @@
 .page-title {
   @include BigTitle();
   color: $primary-color;
+}
+
+.desktop {
+  display: none;
 }
 
 @media (min-width: $desktop-width) {

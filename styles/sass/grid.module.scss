@@ -5,3 +5,11 @@
     justify-items: $justify;
     align-items: $align;
 }
+
+@mixin gridRow($justify, $align) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100%;
+    justify-items: $justify;
+    align-items: $align;
+}

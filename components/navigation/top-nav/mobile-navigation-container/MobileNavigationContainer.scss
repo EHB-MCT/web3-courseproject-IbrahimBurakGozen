@@ -1,0 +1,57 @@
+@import '../../../components.scss';
+
+
+  .menu-container {
+    position: fixed;
+    background-color: #FFF;
+    width: 100vw;
+
+    height: 100vh;
+    top: 0;
+    right: -100vw;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .navigation-links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        margin: auto;
+
+
+        .navigation-links {
+            font-size: 2.5rem;
+            line-height: 170%;
+            @include BoldType();
+        }
+
+        .current-page{
+            color: $blue;
+        }
+    }
+
+    .menu-contact-button-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 5rem;
+
+        .contact-button{
+            @include simpleButton($blue);
+            width: 40%;
+            font-size: 1.4rem;
+            margin: auto;
+        }
+
+        .white-button{
+            background-color: $white;
+            color: $blue;
+        }
+    }
+
+}

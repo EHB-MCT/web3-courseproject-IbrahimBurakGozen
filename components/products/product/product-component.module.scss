@@ -1,0 +1,118 @@
+@import '../../../styles/sass/container.module.scss',
+'../../../styles/sass/main.module.scss',
+'../../../styles/sass/text.module.scss';
+
+// .projectContainer {
+//     @include containerPrimary();
+//     width: 100%;
+//     padding: 0;
+
+//     .projectImg {
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         width: 100%;
+//         max-height: 25vh;
+//         object-fit: cover;
+//         border-radius: $container-border-radius-mobile $container-border-radius-mobile 0 0;
+//     }
+
+//     .projectBottomBar {
+//         padding: 3rem 3rem;
+//         @include flexColumn(center, start);
+
+//         .projectTitle {
+//             @include subTitle();
+//             @include breakText(2);
+//             max-width: 90%;
+//             display: inline-block;
+//             overflow-wrap: break-word;
+//         }
+
+//     }
+
+
+// }
+
+// @media (min-width:$desktop-width) {
+//     .projectContainer {
+//         max-width: 30vw;
+//     }
+
+//     .projectImg {
+//         border-radius: $container-border-radius $container-border-radius 0 0;
+//     }
+// }
+
+
+$product-border-radius:40px;
+
+.productContainer{
+    // @include flexRow(flex-start);
+    @include containerPrimary();
+    border-radius: $product-border-radius;
+    width: 100%;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "title title title img"
+        "status status status img"
+        "productDate productDate productDate button";
+    
+    row-gap: 0.5rem
+}
+
+// .productInnerContainer{
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: repeat(4,1fr);
+//     grid-template-areas: 
+//         "title title title img"
+//         "status status status img"
+//         "productDate productDate productDate button";
+    
+//     row-gap: 0.5rem
+// }
+
+.productTitle{
+    @include subTitle();
+    font-size: 1.7rem;
+    @include BoldType();
+    @include breakText(1);
+    grid-area: title;
+    margin: auto 0;
+} 
+
+.productImg{
+    grid-area: img;
+    width: 70%;
+    margin: auto 0 auto auto;
+    object-fit: cover;
+    bproduct-radius:$product-border-radius;
+}
+
+.productStatus{
+    @include smallTitle();
+    grid-area: status;
+    color: $red;
+    margin: auto 0;
+}
+
+.productDate{
+    grid-area: productDate;
+}
+
+.productDoneButton{
+    @include blueButton();
+    @include smallTitle();
+    color: $typo-white;
+    padding: 0;
+    width: 100%;
+    height:50%;
+    grid-area: button;
+    margin: auto;
+}
