@@ -1,0 +1,75 @@
+{
+  "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/oef2.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "oef2",
+  "Documents": [
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/About.cshtml",
+      "TargetPath": "Pages\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Contact.cshtml",
+      "TargetPath": "Pages\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Pizza.cshtml",
+      "TargetPath": "Pages\\Pizza.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/oef2/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

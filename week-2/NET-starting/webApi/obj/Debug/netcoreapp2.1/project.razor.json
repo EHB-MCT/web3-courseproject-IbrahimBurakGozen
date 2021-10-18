@@ -1,0 +1,19 @@
+{
+  "FilePath": "/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/web3-courseproject-IbrahimBurakGozen/Week 2/NET-starting/webApi/webApi.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "webApi",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

@@ -1,0 +1,14 @@
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/bin/Debug/netcoreapp2.1/webApi.deps.json
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/bin/Debug/netcoreapp2.1/webApi.runtimeconfig.json
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/bin/Debug/netcoreapp2.1/webApi.runtimeconfig.dev.json
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/bin/Debug/netcoreapp2.1/webApi.dll
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/bin/Debug/netcoreapp2.1/webApi.pdb
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.csprojAssemblyReference.cache
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.csproj.CoreCompileInputs.cache
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.RazorAssemblyInfo.cache
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.RazorAssemblyInfo.cs
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.AssemblyInfoInputs.cache
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.AssemblyInfo.cs
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.RazorTargetAssemblyInfo.cache
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.dll
+/Users/Burak/Library/Mobile Documents/com~apple~CloudDocs/SCHOOL/MCT/WEB III/prototypes/NET-starting/webApi/obj/Debug/netcoreapp2.1/webApi.pdb

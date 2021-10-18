@@ -1,0 +1,85 @@
+@import './font.module.scss', './colors.module.scss', './grid.module.scss', './main.module.scss';
+
+@mixin bodyText() {
+    color: $typo-black;
+    @include BookType();
+    font-size: 1.3rem;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+        font-size: 1.8rem;
+        max-width: 50vw;
+    }
+}
+
+@mixin smallTitle() {
+    color: $typo-black;
+    @include MediumType();
+    font-size: 1.5rem;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+        font-size: 1.8rem
+    }
+}
+
+
+@mixin subTitle() {
+    color: $typo-black;
+    @include MediumType();
+    font-size: 2rem;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+        font-size: 2.5rem
+    }
+}
+
+@mixin normalTitle() {
+    color: $typo-black;
+    @include BoldType();
+    font-size: 3rem;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+        font-size: 4rem;
+    }
+}
+
+@mixin BigTitle() {
+    color: $typo-black;
+    @include BoldType();
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+@mixin breakText($lines) {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.sectionTitle {
+    @include normalTitle();
+}
+
+.bodyText {
+    @include bodyText();
+}
+
+.textBlock {
+    @include gridColumn(auto, auto);
+    gap: 1.5rem;
+}
+
+@media (min-width: $desktop-width) {
+    .textBlock {
+        @include gridColumn(start, start);
+        gap: 3rem;
+    }
+}

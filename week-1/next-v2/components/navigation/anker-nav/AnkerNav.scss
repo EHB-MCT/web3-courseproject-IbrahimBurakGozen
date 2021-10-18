@@ -1,0 +1,60 @@
+@import '../../components.scss';
+
+
+.top-bar-container-mobile {
+
+    padding: 2rem $padding-main-content-mobile 0 $padding-main-content-mobile;
+    @include flexRow(space-between);
+  
+    .logo-mobile {
+      @include BoldType();
+      font-size: 3rem;
+      color: $typo-black;
+      margin: 0;
+    }
+  
+    .top-navigation-bar-mobile {
+      @include containerRed();
+      padding: 0;
+      width: 50%;
+      margin-top: auto;
+      margin-bottom: auto;
+      @include flexRow(space-between);
+      position: relative;
+      // z-index: -100;
+  
+      .top-navigation-link-container-mobile {
+        @include containerRed();
+        padding: 1rem;
+        box-shadow: none;
+        box-sizing: border-box;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        @include flexColumn(center);
+  
+        .top-navigation-link-mobile {
+          @include MediumType();
+          font-size: 1.4rem;
+          color: $typo-grey;
+        }
+      }
+  
+      .current-page-mobile-top-bar {
+        background-color: $soft-red;
+  
+        .top-navigation-link-mobile {
+          color: $typo-black;
+        }
+      }
+  
+    }
+  
+}
+  
+.top-bar-container-desktop {
+display: none;
+}
+  
+ 
+  

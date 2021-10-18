@@ -1,0 +1,25 @@
+@import '../../../styles/sass/text.module.scss', '../../../styles/sass/container.module.scss', '../../../styles/sass/main.module.scss', '../../../styles/sass/flex.module.scss';
+
+.topBarContainer {
+    @include flexRow(space-evenly, center);
+    @include containerPrimary();
+
+    margin-top: 2rem;
+    max-width: 90vw;
+
+    background-color: $primary-color-soft;
+    border-radius: 0 100px 100px 0;
+    padding: 2rem;
+    text-align: center;
+
+    img {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.topBarTitle {
+    @include normalTitle();
+    color: $typo-white;
+}

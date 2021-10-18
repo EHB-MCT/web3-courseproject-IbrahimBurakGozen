@@ -1,0 +1,22 @@
+$tablet-width: 768px;
+$desktop-width:1024px;
+$padding-main-content-mobile: 2rem;
+$padding-main-content-desktop: 8rem;
+
+.main-content {
+  padding: 2vh $padding-main-content-mobile;
+  @include grid-column(start, start);
+  gap: 15vh;
+
+  section {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-content {
+    padding: 10vh $padding-main-content-desktop;
+    gap: 10rem;
+  }
+}

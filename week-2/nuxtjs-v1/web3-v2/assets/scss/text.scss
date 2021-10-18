@@ -1,0 +1,83 @@
+@mixin body-text() {
+  color: $typo-black;
+  @include book-type();
+  font-size: 1.3rem;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.8rem;
+    max-width: 50vw;
+  }
+}
+
+@mixin small-title() {
+  color: $typo-black;
+  @include medium-type();
+  font-size: 1.5rem;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.8rem
+  }
+}
+
+
+@mixin sub-title() {
+  color: $typo-black;
+  @include medium-type();
+  font-size: 2rem;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 2.5rem
+  }
+}
+
+@mixin normal-title() {
+  color: $typo-black;
+  @include bold-type();
+  font-size: 3rem;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 4rem;
+  }
+}
+
+@mixin big-title() {
+  color: $typo-black;
+  @include bold-type();
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+@mixin break-text($lines) {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+
+
+.sectionTitle {
+  @include normal-title();
+}
+
+.bodyText {
+  @include body-text();
+}
+
+.textBlock {
+  @include grid-column(auto, auto);
+  gap: 1.5rem;
+}
+
+@media (min-width: $desktop-width) {
+  .textBlock {
+    @include grid-column(start, start);
+    gap: 3rem;
+  }
+}

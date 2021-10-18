@@ -1,0 +1,12 @@
+@import '../../styles/sass/grid.module.scss', '../../styles/sass/main.module.scss';
+
+.container {
+    @include gridColumn(center, center);
+    gap: 2rem;
+}
+
+@media (min-width: $desktop-width) {
+    .container {
+        width: 100%;
+    }
+}

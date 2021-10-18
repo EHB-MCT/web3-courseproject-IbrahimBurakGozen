@@ -1,0 +1,32 @@
+$font-family:futura-pt,
+sans-serif;
+
+@mixin type($weight) {
+  font-family: futura-pt, sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin light-type() {
+  @include type(300);
+}
+
+@mixin book-type() {
+  @include type(400);
+}
+
+@mixin medium-type() {
+  @include type(500);
+}
+
+@mixin demi-type() {
+  @include type(600);
+}
+
+@mixin bold-type() {
+  @include type(700);
+}
+
+@mixin extra-bold-type() {
+  @include type(900);
+}

@@ -1,0 +1,30 @@
+@mixin LightType() {
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin BookType() {
+  @include LightType();
+  font-weight: 400;
+}
+
+@mixin MediumType() {
+  @include LightType();
+  font-weight: 500;
+}
+
+@mixin DemiType() {
+  @include LightType();
+  font-weight: 600;
+}
+
+@mixin BoldType() {
+  @include LightType();
+  font-weight: 700;
+}
+
+@mixin ExtraBoldType() {
+  @include LightType();
+  font-weight: 800;
+}
