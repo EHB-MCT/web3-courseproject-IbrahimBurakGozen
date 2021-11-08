@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0
+
+#ENV DOTNET_USE_POLLING_FILE_WATCHER 1
+
+WORKDIR /app
+COPY . .
+ENTRYPOINT dotnet watch run --no-restore

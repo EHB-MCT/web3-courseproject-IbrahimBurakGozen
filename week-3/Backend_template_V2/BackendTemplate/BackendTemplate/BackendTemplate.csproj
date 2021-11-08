@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-BackendTemplate-9B58FCAA-8B79-4576-834D-79F858DE0546</UserSecretsId>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.11" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.19.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Faker.Net" Version="1.5.150" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Repositories\" />
+    <None Remove="Models\" />
+    <None Remove="UnitOfWork\" />
+    <None Remove="Repositories\Project\" />
+    <None Remove="MySql.EntityFrameworkCore" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Context\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Seeds\" />
+    <None Remove="Faker.Net" />
+    <None Remove="Repositories\Subproject\" />
+    <None Remove="Repositories\Client\" />
+    <None Remove="Repositories\Employee\" />
+    <None Remove="Repositories\Category\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Models\" />
+    <Folder Include="UnitOfWork\" />
+    <Folder Include="Repositories\Project\" />
+    <Folder Include="Context\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Repositories\Subproject\" />
+    <Folder Include="Repositories\Client\" />
+    <Folder Include="Repositories\Employee\" />
+    <Folder Include="Repositories\Category\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  backendtemplate:
+    image: ${DOCKER_REGISTRY-}backendtemplate
+    build:
+      context: .
+      dockerfile: BackendTemplate/Dockerfile
