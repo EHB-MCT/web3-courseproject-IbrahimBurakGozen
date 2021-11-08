@@ -23,14 +23,14 @@ services:
     image: ${DOCKER_REGISTRY-}backendtemplate
     build:
       context: .
-      dockerfile: ./BackendTemplate/Dockerfile
+      dockerfile: BackendTemplate/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       CONNECTION_STRINGS: server=db;port=3306;database=${DB_DATABASE};user=root;password=${DB_ROOT_PASSWORD};
     ports:
       - "80:80"
     volumes:
-      - ./BackendTemplate:/app
+      - ./BackendTemplate:/root/.aspnet/https:ro
     depends_on:
        - db
     networks:
